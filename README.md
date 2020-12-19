@@ -44,7 +44,9 @@
 </table>
 
 <h2>Example usage:</h2>
-
+<br/>
+//Set pricelist<br/>
+$terminal = new Terminal($pricelist);<br/>
 //Scanning items<br/>
 $terminal->scanItem("ZA");<br/>
 $terminal->scanItem("YB");<br/>
