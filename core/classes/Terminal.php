@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Lane\Core\Classes;
-
 
 class Terminal
 {
@@ -16,15 +14,12 @@ class Terminal
 
     public function scanItem(string $item)
     {
-        $this->purchase[$item]  = (isset($this->purchase[$item])) ?
-            $this->purchase[$item] + 1 :
-            1;
+        $this->purchase[$item]  = (isset($this->purchase[$item])) ?  $this->purchase[$item] + 1 :  1;
     }
 
     public function getTotal()
     {
         $total = 0;
-
         foreach ($this->purchase  as $code => $qtty)
         {
             if(in_array($code , array_keys($this->pricelist)))
