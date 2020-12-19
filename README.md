@@ -69,7 +69,7 @@ $pricelist = [
         'ppi' => '0.15'
     ]
 ];
-
+<br/>
 //Set pricelist<br/>
 $terminal = new Terminal($pricelist);<br/>
 
