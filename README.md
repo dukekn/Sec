@@ -45,8 +45,34 @@
 
 <h2>Example usage:</h2>
 <br/>
+
+//@var array
+$pricelist = [
+    'ZA' => [
+        'ppi' => '2',
+        'bulk' => [
+            'min_qtty' => '4',
+            'price' => '7'
+        ]
+    ],
+    'YB' => [
+        'ppi' => '12'
+    ],
+    'FC' => [
+        'ppi' => '1.25',
+        'bulk' => [
+            'min_qtty' => '6',
+            'price' => '6'
+        ]
+    ],
+    'GD' => [
+        'ppi' => '0.15'
+    ]
+];
+
 //Set pricelist<br/>
 $terminal = new Terminal($pricelist);<br/>
+
 //Scanning items<br/>
 $terminal->scanItem("ZA");<br/>
 $terminal->scanItem("YB");<br/>
